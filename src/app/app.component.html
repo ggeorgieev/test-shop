@@ -1,0 +1,8 @@
+<div>
+    <img src="../assets/images/lidl.png" width="100"/>
+</div>
+<br/>
+<a [routerLink]="['/products']" class="padding-right-15" title="Product List"><img src="../assets/images/product_list.svg" width="40"/></a>
+<a [routerLink]="['/cart']" title="Cart"><img src="../assets/images/cart.png" width="40"/></a>({{getCartItemsCount()}})
+<br/>
+<router-outlet></router-outlet>

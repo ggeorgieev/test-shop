@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+}
+
+th {
+    height: 30px;
+    background-color: steelblue;
+}
+
+td {
+    width: 100px;
+    height: 80px;
+}
+
+.padding-right-15 {
+    padding-right: 15px;
+}
+
+.btn {
+    color: steelblue;
+    background: transparent;
+    border: 2px solid steelblue;
+    border-radius: 6px;
+    height: 30px;
+    font-style: italic;
+    font-size: 15px;
+    font-family: "Arial";
+}
+
+.btn:hover {
+    background-color: steelblue;
+    color: black;
+}
+
+body {
+    background-image: url("assets/images/background.jpg");
+    background-position: center;
+}

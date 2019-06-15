@@ -1,0 +1,22 @@
+<h3>Product List</h3>
+<search [products]="products" (productsChanged)="updateProducts($event)"></search>
+<br/>
+<table border="1" *ngIf="products && products.length > 0">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Add to cart</th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td><div align="center">{{product.name}}</div></td>
+        <td><div align="center">{{product.price}} eur</div></td>
+        <td>
+            <div align="center"><img src="assets/images/{{product.image}}" width="50"/></div>
+        </td>
+        <td>
+            <a href="javascript:void(0)" (click)="addToCart(product)"><div align="center"><img src="../../../assets/images/add_to_cart.png" width="30"/></div></a>
+        </td>
+    </tr>
+</table>
+<h3 *ngIf="!products || products.length == 0">Oops! No products available!</h3>
